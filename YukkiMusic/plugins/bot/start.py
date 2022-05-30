@@ -55,7 +55,7 @@ async def start_comm(client, message: Message, _):
             return await message.reply_text(_["song_2"])
         if name[0:3] == "sta":
             m = await message.reply_text(
-                "🔎 Fetching your personal stats.!"
+                "🔎 Mengambil statistik pribadi Anda.!"
             )
             stats = await get_userss(message.from_user.id)
             tot = len(stats)
@@ -91,9 +91,9 @@ async def start_comm(client, message: Message, _):
                     details = stats.get(vidid)
                     title = (details["title"][:35]).title()
                     if vidid == "telegram":
-                        msg += f"🔗[Telegram Files and Audios](https://t.me/telegram) ** played {count} times**\n\n"
+                        msg += f"🔗[Telegram Files and Audios](https://t.me/telegram) ** dimainkan {count} waktu**\n\n"
                     else:
-                        msg += f"🔗 [{title}](https://www.youtube.com/watch?v={vidid}) ** played {count} times**\n\n"
+                        msg += f"🔗 [{title}](https://www.youtube.com/watch?v={vidid}) ** dimainkan {count} waktu**\n\n"
                 msg = _["ustats_2"].format(tot, tota, limit) + msg
                 return videoid, msg
 
@@ -126,7 +126,7 @@ async def start_comm(client, message: Message, _):
                 return await Telegram.send_split_text(message, lyrics)
             else:
                 return await message.reply_text(
-                    "Failed to get lyrics."
+                    "Gagal mendapatkan lirik."
                 )
         if name[0:3] == "del":
             await del_plist_msg(client=client, message=message, _=_)
@@ -147,18 +147,18 @@ async def start_comm(client, message: Message, _):
                 link = result["link"]
                 published = result["publishedTime"]
             searched_text = f"""
-🔍__**Video Track Information**__
+🔍__**Informasi Trek Video**__
 
-❇️**Title:** {title}
+❇️**Judul:** {title}
 
-⏳**Duration:** {duration} Mins
+⏳**Durasi:** {duration} Mins
 👀**Views:** `{views}`
-⏰**Published Time:** {published}
+⏰**Waktu Terbit:** {published}
 🎥**Channel Name:** {channel}
 📎**Channel Link:** [Visit From Here]({channellink})
 🔗**Video Link:** [Link]({link})
 
-⚡️ __Searched Powered By {config.MUSIC_BOT_NAME}__"""
+⚡️ __Pencarian Didukung oleh {config.MUSIC_BOT_NAME}__"""
             key = InlineKeyboardMarkup(
                 [
                     [
