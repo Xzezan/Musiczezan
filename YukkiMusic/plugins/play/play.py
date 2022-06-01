@@ -34,6 +34,7 @@ from YukkiMusic.utils.inline.play import (livestream_markup,
 from YukkiMusic.utils.inline.playlist import botplaylist_markup
 from YukkiMusic.utils.logger import play_logs
 from YukkiMusic.utils.stream.stream import stream
+from YukkiMusic.utils.sub import ken
 
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
@@ -45,6 +46,7 @@ PLAY_COMMAND = get_command("PLAY_COMMAND")
     & ~filters.edited
     & ~BANNED_USERS
 )
+@ken
 @PlayWrapper
 async def play_commnd(
     client,
@@ -55,7 +57,6 @@ async def play_commnd(
     channel,
     playmode,
     url,
-    fplay,
 ):
     mystic = await message.reply_text(
         _["play_2"].format(channel) if channel else _["play_1"]
