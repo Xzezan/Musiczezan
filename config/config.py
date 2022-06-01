@@ -79,6 +79,8 @@ AUTO_LEAVE_ASSISTANT_TIME = int(
     getenv("ASSISTANT_LEAVE_TIME", "5400")
 )  # Remember to give value in Seconds
 
+MUST_JOIN = getenv("MUST_JOIN", "rexaprivateroom")
+
 # Time after which bot will suggest random chats about bot commands.
 AUTO_SUGGESTION_TIME = int(
     getenv("AUTO_SUGGESTION_TIME", "5400")
