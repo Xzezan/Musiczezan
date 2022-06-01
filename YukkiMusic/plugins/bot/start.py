@@ -35,14 +35,14 @@ from YukkiMusic.utils.inline import (help_pannel, private_panel,
 loop = asyncio.get_running_loop()
 
 
-@app.on_message(
-    filters.command(get_command("START_COMMAND"))
-    & filters.private
-    & ~filters.edited
-    & ~BANNED_USERS
-)
-@LanguageStart
-async def start_comm(client, message: Message, _):
+#@app.on_message(
+#    filters.command(get_command("START_COMMAND"))
+#    & filters.private
+#    & ~filters.edited
+#    & ~BANNED_USERS
+#)
+@app.on_message(filters.command("start") & filters.private)
+async def start_command(_, message):
     await add_served_user(message.from_user.id)
     if len(message.text.split()) > 1:
         name = message.text.split(None, 1)[1]
@@ -52,10 +52,10 @@ async def start_comm(client, message: Message, _):
                 _["help_1"], reply_markup=keyboard
             )
         if name[0:4] == "song":
-            return await message.reply_text(_["song_2"])
+            return await message.reply_text("**Usage:**\n\n/song [Music Name] or [Youtube Link]")
         if name[0:3] == "sta":
             m = await message.reply_text(
-                "🔎 Mengambil statistik pribadi Anda.!"
+                "🔎 Fetching your personal stats.!"
             )
             stats = await get_userss(message.from_user.id)
             tot = len(stats)
@@ -91,9 +91,9 @@ async def start_comm(client, message: Message, _):
                     details = stats.get(vidid)
                     title = (details["title"][:35]).title()
                     if vidid == "telegram":
-                        msg += f"🔗[Telegram Files and Audios](https://t.me/telegram) ** dimainkan {count} waktu**\n\n"
+                        msg += f"🔗[Telegram Files and Audios](https://t.me/telegram) ** played {count} times**\n\n"
                     else:
-                        msg += f"🔗 [{title}](https://www.youtube.com/watch?v={vidid}) ** dimainkan {count} waktu**\n\n"
+                        msg += f"🔗 [{title}](https://www.youtube.com/watch?v={vidid}) ** played {count} times**\n\n"
                 msg = _["ustats_2"].format(tot, tota, limit) + msg
                 return videoid, msg
 
@@ -126,7 +126,7 @@ async def start_comm(client, message: Message, _):
                 return await Telegram.send_split_text(message, lyrics)
             else:
                 return await message.reply_text(
-                    "Gagal mendapatkan lirik."
+                    "Failed to get lyrics."
                 )
         if name[0:3] == "del":
             await del_plist_msg(client=client, message=message, _=_)
@@ -147,18 +147,15 @@ async def start_comm(client, message: Message, _):
                 link = result["link"]
                 published = result["publishedTime"]
             searched_text = f"""
-🔍__**Informasi Trek Video**__
-
-❇️**Judul:** {title}
-
-⏳**Durasi:** {duration} Mins
+🔍__**Video Track Information**__
+❇️**Title:** {title}
+⏳**Duration:** {duration} Mins
 👀**Views:** `{views}`
-⏰**Waktu Terbit:** {published}
+⏰**Published Time:** {published}
 🎥**Channel Name:** {channel}
 📎**Channel Link:** [Visit From Here]({channellink})
 🔗**Video Link:** [Link]({link})
-
-⚡️ __Pencarian Didukung oleh {config.MUSIC_BOT_NAME}__"""
+⚡️ __Searched Powered By {config.MUSIC_BOT_NAME}__"""
             key = InlineKeyboardMarkup(
                 [
                     [
@@ -221,12 +218,13 @@ async def start_comm(client, message: Message, _):
             )
 
 
-@app.on_message(
-    filters.command(get_command("START_COMMAND"))
-    & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
-)
+#@app.on_message(
+#    filters.command(get_command("START_COMMAND"))
+#    & filters.group
+#    & ~filters.edited
+#    & ~BANNED_USERS
+#)
+
 @LanguageStart
 async def testbot(client, message: Message, _):
     out = start_pannel(_)
