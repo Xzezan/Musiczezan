@@ -25,27 +25,25 @@
 <p><a href="https://dashboard.heroku.com/new?template=https://github.com/Rexashh/YukkiRexa/tree/master"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a></p>  
 
 ### ᴠᴘs
-- Upgrade & Update :
+- **update**
 `sudo apt-get update && sudo apt-get upgrade -y`
-- Menginstal Paket yang Diperlukan :
+- **ffmpeg**
 `sudo apt-get install python3-pip ffmpeg -y`
-- install pip :
+- **pip**
 `sudo pip3 install -U pip`
-- Install Node
+- **node**
 `curl -fssL https://deb.nodesource.com/setup_17.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm`
-- kloning repository
-`git clone https://github.com/Rexashh/YukkiRexa &&  cd YukkiRexa`
-- install requirements
+- **clone**
+`git clone https://Rexashh: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@github.com/Rexashh/musichikari && cd musichikari`
+- **req**
 `pip3 install -U -r requirements.txt`
-- mengganti nama sample.env dengan .env
+- **cp**
 `cp sample.env .env`
-- Masuk ke .env
+- **nano**
 `nano .env`
-- Masukan semua data data bot music mu disitu
-- Setelah semua data dimasukan silahkan `ctrl + x` dan `y`
-- Buat Screen agar bot Aktif terus menerus 
+- **screen**
 `screen -S botmusic`
-- Jalankan bot ketik :
+- **start**
 `bash start`
 
 ### ᴏᴋᴛᴇᴛᴏ
