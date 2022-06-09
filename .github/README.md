@@ -1,12 +1,12 @@
-![](https://github.com/Rexashh/YukkiRexa/blob/master/d958bb05418639f7ebe67755900f5ad0.gif)
+![](https://github.com/Rexashh/musichikari/blob/master/T-RexGirl.jpg)
 
 <h4 align="center">
-      INI PRIVATE XA MUSIC YA ANJG
+      HIKARI MUSIC REPO PV
 </h4>
 
 
     
-# XA PRIVATE
+# HIKARI MUSIC PV
 
 <details>
 <summary><b>🚀 STRING SESSION </b></summary>
