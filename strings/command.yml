@@ -34,7 +34,7 @@ DELETEPLAYLIST_COMMAND : ["deleteplaylist"]
 # Tools
 QUEUE_COMMAND : ["queue","cqueue", "player", "cplayer", "playing", "cplaying"]
 SONG_COMMAND : ["song", "video"]
-LYRICS_COMMAND : ["lyrics"]
+LYRICS_COMMAND : ["musiclyrics"]
 
 
 # Admin Commands
@@ -63,9 +63,9 @@ SUDOUSERS_COMMAND : ["musicsudolist"]
 BROADCAST_COMMAND : ["musicbroadcast"]
 
 #Blacklist chat
-BLACKLISTCHAT_COMMAND : ["blacklistchat"]
-WHITELISTCHAT_COMMAND : ["whitelistchat"]
-BLACKLISTEDCHAT_COMMAND : ["blacklistedchat"]
+BLACKLISTCHAT_COMMAND : ["mblacklistchat"]
+WHITELISTCHAT_COMMAND : ["mwhitelistchat"]
+BLACKLISTEDCHAT_COMMAND : ["mblacklistedchat"]
 
 # Video Calls Command
 VIDEOLIMIT_COMMAND : ["set_video_limit"]
@@ -73,7 +73,7 @@ VIDEOMODE_COMMAND : ["videomode"]
 
 #Mantenance
 MAINTENANCE_COMMAND : ["musicmaintenance"]
-LOGGER_COMMAND : ["logger"]
+LOGGER_COMMAND : ["musiclogger"]
 
 #Heroku
 GETLOG_COMMAND : ["get_log"]
@@ -95,16 +95,16 @@ UNAUTHORIZE_COMMAND : ["unauthorize"]
 AUTHORIZED_COMMAND : ["authorized"]
 
 #Block Users Command
-BLOCK_COMMAND : ["block"]
-UNBLOCK_COMMAND : ["unblock"]
-BLOCKED_COMMAND : ["blockedusers"]
+BLOCK_COMMAND : ["musicblock"]
+UNBLOCK_COMMAND : ["musicunblock"]
+BLOCKED_COMMAND : ["musicblockedusers"]
 
 #sPEEDTEST
-SPEEDTEST_COMMAND : ["speedtest"]
+SPEEDTEST_COMMAND : ["musicspeedtest"]
 
 #Voice chat commands
-ACTIVEVC_COMMAND : ["activevoice"]
-ACTIVEVIDEO_COMMAND : ["activevideo"]
+ACTIVEVC_COMMAND : ["am"]
+ACTIVEVIDEO_COMMAND : ["av"]
 
 #Gban Commands
 GBAN_COMMAND : ["musicgban"]
