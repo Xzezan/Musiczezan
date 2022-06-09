@@ -130,8 +130,8 @@ gstats_11 : "**Statistik Umum {0}**\nPilih tombol dari bawah yang ingin Anda per
 # Play 
 
 #Play Callback 
-play cb1 : "Ini bukan untukmu! Cari Lagumu Sendiri."
-play cb2 : "Mendapatkan Hasil Selanjutnya"
+play_cb1 : "Ini bukan untukmu! Cari Lagumu Sendiri."
+play_cb2 : "Mendapatkan Hasil Selanjutnya"
 
 # Channel Play
 cplay_1 : "Anda dapat memutar musik di Channel dari obrolan ini[{0}] ke channel mana pun atau Channdl tertaut obrolan Anda.\n\n**Untuk saluran tertaut:**\n`/{1} linked`\n\n* *Untuk Channel lainnya:**\n`/{1} [ID Channel]`"
@@ -198,7 +198,7 @@ track_2 : "**Error**\n\nTidak ada **{0} Top 10 Playlist** di server bot. Silakan
 # TOOLS
 
 #Lyrics
-lyrics_1 : "**Penggunaan:**\n\n/lirik [ Nama Musik]"
+lyrics_1 : "**Penggunaan:**\n\n/lyrics [ Nama Musik]"
 lyrics_2 : "Mencari Lirik"
 lyrics_3 : "❌ Gagal mengambil lirik😞.\n\n💡**Mencoba Mencari:** {0}"
 lyrics_4 : "Klik tombol di bawah ini dan cari lirik untuk menghindari pencarian lirik jenis spam yang panjang."
@@ -250,10 +250,10 @@ S_B_1 : "🗒 ᴘᴇʀɪɴᴛᴀʜ"
 S_B_2 : "🔧 ᴘᴇɴɢᴀᴛᴜʀᴀɴ"
 S_B_3 : "👥 ɢʀᴏᴜᴘ"
 S_B_4 : "⚡ ᴄʜᴀɴɴᴇʟ"
-S_B_5 : "✚ Tambahkan ke Group"
-S_B_6 : "⚡ Repository"
-S_B_7 : "👨‍💻 Pemilik Bot"
-S_B_8 : "🔎 Menu Perintah."
+S_B_5 : "✚ ᴛᴀᴍʙᴀʜ ᴋᴇ ɢʀᴏᴜᴘ"
+S_B_6 : "⚡ ʀᴇᴘᴏsɪᴛᴏʀʏ"
+S_B_7 : "👨‍💻 ᴘᴇᴍɪʟɪᴋ ʙᴏᴛ"
+S_B_8 : "⌨️ ʟɪsᴛ ᴘᴇʀɪɴᴛᴀʜ"
 
 #Help 
 H_B_1 : "ᴘᴇʀɪɴᴛᴀʜ ᴀᴅᴍɪɴ"
