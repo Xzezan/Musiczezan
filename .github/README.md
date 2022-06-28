@@ -34,7 +34,7 @@
 - **node**
 `curl -fssL https://deb.nodesource.com/setup_17.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm`
 - **clone**
-`git clone https://Rexashh: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@github.com/Rexashh/musichikari && cd musichikari`
+`git clone https://Rexashh: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@github.com/Rexashh/musichikari && cd musichikari`
 - **req**
 `pip3 install -U -r requirements.txt`
 - **cp**
