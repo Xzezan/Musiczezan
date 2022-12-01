@@ -53,7 +53,7 @@
 - [List Variable](https://github.com/Rexashh/YukkiRexa/blob/master/config/README.md)
 
 ### ʟɪsᴛ ᴘᴇʀɪɴᴛᴀʜ
-- Klik [disini](https://github.com/Rexashh/YukkiRexa/blob/master/strings/command.yml) untuk melihat semua perintah pada bot music
+- Klik [disini](https://github.com/Rexashh/musichikari/blob/master/strings/command.yml) untuk melihat semua perintah pada bot music
 
 </details>
 
