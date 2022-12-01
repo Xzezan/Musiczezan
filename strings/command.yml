@@ -11,13 +11,13 @@
 # Commands in Every Language
 
 # Bot Commands
-PING_COMMAND : ["musicping"]
-START_COMMAND : ["start"]
-HELP_COMMAND : ["musichelp"]
-SETTINGS_COMMAND : ["musicsettings", "musicsetting"]
+PING_COMMAND : ["mping"]
+START_COMMAND : ["mstart"]
+HELP_COMMAND : ["mhelp"]
+SETTINGS_COMMAND : ["msettings", "msetting"]
 RELOAD_COMMAND : ["admincache", "reload"]
 GSTATS_COMMAND : ["gstats"]
-STATS_COMMAND : ["musicstats"]
+STATS_COMMAND : ["mstats"]
 LANGUAGE_COMMAND : ["lang", "language", "langs"]
 
 # Play Commands
@@ -43,24 +43,24 @@ UNAUTH_COMMAND : ["unauth"]
 AUTHUSERS_COMMAND : ["authusers"]
 PAUSE_COMMAND : ["pause", "cpause"]
 RESUME_COMMAND : ["resume", "cresume"]
-MUTE_COMMAND : ["musicmute", "cmute"]
-UNMUTE_COMMAND : ["musicunmute", "cunmute"]
-STOP_COMMAND : ["musicstop", "end", "cstop", "cend"]
+MUTE_COMMAND : ["mmute", "cmute"]
+UNMUTE_COMMAND : ["munmute", "cunmute"]
+STOP_COMMAND : ["mstop", "end", "cstop", "cend"]
 SKIP_COMMAND : ["skip", "cskip"]
 SHUFFLE_COMMAND : ["shuffle", "cshuffle"]
 LOOP_COMMAND : ["loop", "cloop"]
 SEEK_COMMAND : ["seek", "cseek", "seekback", "cseekback"]
-RESTART_COMMAND : ["musicrestart"]
+RESTART_COMMAND : ["mrestart"]
 
 # Sudo Users Commaands
 
 # Sudo Command
-ADDSUDO_COMMAND : ["musicaddsudo"]
-DELSUDO_COMMAND : ["musicdelsudo"]
-SUDOUSERS_COMMAND : ["musicsudolist"]
+ADDSUDO_COMMAND : ["maddsudo"]
+DELSUDO_COMMAND : ["mdelsudo"]
+SUDOUSERS_COMMAND : ["msudolist"]
 
 #Broadcast 
-BROADCAST_COMMAND : ["musicbroadcast"]
+BROADCAST_COMMAND : ["mbroadcast"]
 
 #Blacklist chat
 BLACKLISTCHAT_COMMAND : ["mblacklistchat"]
@@ -73,20 +73,20 @@ VIDEOMODE_COMMAND : ["videomode"]
 
 #Mantenance
 MAINTENANCE_COMMAND : ["musicmaintenance"]
-LOGGER_COMMAND : ["musiclogger"]
+LOGGER_COMMAND : ["mlogger"]
 
 #Heroku
 GETLOG_COMMAND : ["get_log"]
 GETVAR_COMMAND : ["get_var"]
 DELVAR_COMMAND : ["del_var"]
 SETVAR_COMMAND : ["set_var"]
-USAGE_COMMAND : ["usage"]
+USAGE_COMMAND : ["musage"]
 VARS_COMMAND : ["vars", "config"]
 
 
 #Basic Bot Commands
 UPDATE_COMMAND : ["update"]
-REBOOT_COMMAND : ["musicreboot"]
+REBOOT_COMMAND : ["mreboot"]
 AUTOEND_COMMAND : ["autoend"]
 
 #Private Bot Mode
@@ -95,18 +95,18 @@ UNAUTHORIZE_COMMAND : ["unauthorize"]
 AUTHORIZED_COMMAND : ["authorized"]
 
 #Block Users Command
-BLOCK_COMMAND : ["musicblock"]
-UNBLOCK_COMMAND : ["musicunblock"]
-BLOCKED_COMMAND : ["musicblockedusers"]
+BLOCK_COMMAND : ["mblock"]
+UNBLOCK_COMMAND : ["munblock"]
+BLOCKED_COMMAND : ["mblockedusers"]
 
 #sPEEDTEST
-SPEEDTEST_COMMAND : ["musicspeedtest"]
+SPEEDTEST_COMMAND : ["mspeedtest"]
 
 #Voice chat commands
 ACTIVEVC_COMMAND : ["am"]
 ACTIVEVIDEO_COMMAND : ["av"]
 
 #Gban Commands
-GBAN_COMMAND : ["musicgban"]
-UNGBAN_COMMAND : ["musicungban"]
-GBANNED_COMMAND : ["musicgbannedusers"]
+GBAN_COMMAND : ["mgban"]
+UNGBAN_COMMAND : ["mungban"]
+GBANNED_COMMAND : ["mgbannedusers"]
